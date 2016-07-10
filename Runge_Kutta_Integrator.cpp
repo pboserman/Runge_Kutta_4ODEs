@@ -14,6 +14,10 @@ params-> other numerical constants
 -> lower boundary in 
 */
 
+double add(double x, double y)
+{
+	return x+y;
+}
 
 double *Runge_Kutta_4ODE(int N, double z_0, double z_max, double F_0, double G_0, double H_0, double I_0, double (*Ffunc)(double,double,double,double,double,void*), double (*Gfunc)(double,double,double,double,double,void*), double (*Hfunc)(double,double,double,double,double,void*), double (*Ifunc)(double,double,double,double,double,void*), void *params)
 {
